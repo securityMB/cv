@@ -1,0 +1,217 @@
+<!DOCTYPE html><meta charset="utf-8" />
+<title>Resume - Michał Bentkowski</title>
+<meta name="description" content="Resume of Michał Bentkowski" />
+<base target="_blank" />
+<link rel="stylesheet" href="app.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+  rel="stylesheet"
+/>
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+
+<body class="m-8 mt-8 print:m-0 print:mt-0 font-[Roboto]">
+  <div
+    class="w-[210mm] h-[297mm] print:w-full print:h-full print:border-0 border border-black print:p-0 p-[0.5cm] flex flex-col gap-y-2 break-after-page print:mb-0 mb-8"
+  >
+    <!-- heading -->
+    <div class="flex flex-col gap-3">
+      <h1 class="text-3xl uppercase tracking-tight font-medium text-center">
+        Michał Bentkowski
+      </h1>
+      <div class="flex flex-row gap-6 justify-center text-sm">
+        <div class="flex gap-2 items-center">
+          <ion-icon name="mail-outline" style="font-size: 20px"></ion-icon>
+          <a href="mailto:michal@bentkowski.info">michal@bentkowski.info</a>
+        </div>
+        <div class="flex gap-2 items-center">
+          <ion-icon name="call-outline" style="font-size: 20px"></ion-icon>
+          <a href="tel:+48698823318">+48 698 823 318</a>
+        </div>
+        <div class="flex gap-2 items-center">
+          <ion-icon name="logo-twitter" style="font-size: 20px"></ion-icon>
+          <a href="https://twitter.com/SecurityMB">@SecurityMB</a>
+        </div>
+      </div>
+      <div class="flex justify-center text-sm">
+        <div class="flex gap-2 items-center">
+          <ion-icon name="person-outline" style="font-size: 20px"></ion-icon>
+          <span>penetration tester / training instructor / researcher</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- end heading -->
+    <hr class="my-2" />
+    <!-- experience -->
+    <h2 class="text-2xl font-bold text-red-900">Experience</h2>
+    <div class="flex justify-between text-red-900">
+      <div class="text-xl flex gap-2 items-center">
+        <ion-icon name="caret-forward-outline"></ion-icon>
+        <span>Securitum.pl</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <span>Oct 2013 - present</span>
+        <!-- <ion-icon name="calendar-outline" style="font-size: 24px"></ion-icon> -->
+      </div>
+    </div>
+    <div>
+      <ul class="ml-8 list-disc flex flex-col gap-[6px]">
+        <li>
+          Conducted over 120 penetration tests, mainly of web applications and
+          mobile applications.
+        </li>
+        <li>
+          Audited source code of applications written typically in Java, PHP,
+          TypeScript or JavaScript.
+        </li>
+        <li>
+          Developed an internal tool for helping identify prototype pollution
+          issues in client-side and server-side JS via code instrumentation.
+        </li>
+        <li>
+          Developed an internal tool based on Frida for simplifying mobile
+          application testing by providing automatic TLS and root check
+          bypasses, and a REPL for hooking into methods.
+        </li>
+        <li>
+          Developed an internal tool for finding authorization issues in .NET
+          Core MVC applications via static code analysis.
+        </li>
+        <li>
+          Researched
+          <a
+            class="a"
+            href="https://research.securitum.com/the-curious-case-of-copy-paste/"
+            >security issues in implementation of Copy And Paste</a
+          >
+          in browsers, popular WYSIWYG editors and web applications, exposing
+          several previously unknown vulnerabilities.
+        </li>
+        <li>
+          Analyzed
+          <a
+            class="a"
+            href="https://research.securitum.com/security-analysis-of-portal-element/"
+            >security properties of &lt;portal&gt; HTML element</a
+          >
+          in Chromium, exposing several bugs, including same origin policy
+          bypass.
+        </li>
+        <li>
+          Verified impact of
+          <a class="a" href=""
+            >prototype pollution on JavaScript-based HTML sanitizers</a
+          >, proving that almost
+        </li>
+        <li>
+          Uncovered several bypasses of DOMPurify, including a new technique
+          known as
+          <a
+            class="a"
+            href="https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/"
+            >namespace confusion</a
+          >.
+        </li>
+        <li>
+          Contributed to DOMPurify with a
+          <a class="a" href="https://github.com/cure53/DOMPurify/pull/495"
+            >pull request</a
+          >
+          meant to add substantial defense against previously reported issues.
+        </li>
+        <li>
+          Uncovered security issues in lesser-known sanitizers, such as:
+          <a
+            href="https://research.securitum.com/html-sanitization-bypass-in-ruby-sanitize-5-2-1/"
+            class="a"
+            >Ruby Sanitize</a
+          >,
+          <a
+            href="https://github.com/mganss/HtmlSanitizer/security/advisories/GHSA-8j9v-h2vp-2hhv"
+            class="a"
+            >.NET&nbsp;HtmlSanitizer</a
+          >,
+          <a
+            href="https://github.com/microcosm-cc/bluemonday/commit/f0057e2386fef8ce4ee3ede8a56b59d27449d49f"
+            class="a"
+            >bluemonday</a
+          >
+          (uncredited),
+          <a href="https://github.com/rust-ammonia/ammonia/pull/142" class="a"
+            >rust-ammonia</a
+          >
+          (credited in README).
+        </li>
+        <li>
+          Crafted a successful, public, two-day practical training course: "<a
+            class="a"
+            href="https://securitum.pl/szkolenia/bezpieczenstwo-frontendu-aplikacji-www-szkolenie/"
+            >Frontend Web Security</a
+          >", covering topics such as: XSS attacks and defense, security
+          headers, CORS, postMessage and others.
+        </li>
+        <li>
+          Crafted a successful, public, 4-hour training course: "<a
+            class="a"
+            href="https://securitum.pl/szkolenia/podstawowe-zasady-tworzenia-bezpiecznego-kodu/"
+            >Secure Coding Pricinples</a
+          >", covering topics such as preparing security NFRs, principle of
+          least privilege, regression testing and others.
+        </li>
+        <li>
+          Designed and coded frontend of a CTF platform (NextJS, Firebase).
+        </li>
+        <li>
+          Designed and crafted backend of CTF platform, including health checks
+          and sandboxing (Kubernetes, Python, nsjail).
+        </li>
+        <li>
+          Developed over 25 CTF challenges covering various subjects:
+          authentication, XSS, SQL Injection, cryptography, reverse engineering,
+          access control issues, prototype pollution.
+        </li>
+        <li>
+          Performing quality checks of security reports prepared by co-workers,
+          verifying technical substance, typos and other issues.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="w-[210mm] h-[297mm] print:w-full print:h-full print:border-0 border border-black print:p-0 p-[0.5cm] flex flex-col gap-y-2"
+  >
+    <!-- heading -->
+    <div class="flex flex-col gap-3">
+      <!-- end experience -->
+      <h2
+        class="text-4xl font-bold mb-4 mt-8 break-before-page break-inside-avoid-page"
+      >
+        Other noteworthy facts
+      </h2>
+      <ul class="ml-8 list-disc">
+        <li>Byłem na liście 0x0A przez kilka lat</li>
+        <li>Zgłaszałem też błędy w bug bounty Chrome</li>
+        <li>Mam 15 CVE</li>
+        <li>Zgłaszałem błędy do bibliotek</li>
+        <li>@BugsChromium na twitterze?</li>
+      </ul>
+      Technical knowledge of security engineering, computer and network
+      security, authentication, security protocols and applied cryptography.
+      Relevant work experience in pen testing and/or fuzzing. Experience in
+      application-level vulnerability testing and code-level security auditing.
+    </div>
+  </div>
+</body>
