@@ -481,25 +481,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-8 {
   margin-left: 2rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -516,15 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .list-disc {
   list-style-type: disc;
-}
-
-.break-before-page {
-  -moz-column-break-before: page;
-       break-before: page;
-}
-
-.break-inside-avoid-page {
-  break-inside: avoid-page;
 }
 
 .break-after-page {
@@ -564,14 +550,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.gap-\[4px\] {
-  gap: 4px;
-}
-
-.gap-\[2px\] {
-  gap: 2px;
-}
-
 .gap-\[6px\] {
   gap: 6px;
 }
@@ -606,29 +584,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-medium {
@@ -678,16 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .print\:w-full {
     width: 100%;
-  }
-
-  .print\:break-before-page {
-    -moz-column-break-before: page;
-         break-before: page;
-  }
-
-  .print\:break-after-page {
-    -moz-column-break-after: page;
-         break-after: page;
   }
 
   .print\:border-0 {
